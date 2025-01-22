@@ -35,6 +35,10 @@ import React from 'react';
             <div className="max-w-7xl mx-auto px-4">
               <AvailabilityChecker isInitiallyExpanded={true} noAccordion={true} />
             </div>
+             {/* Duplicated main content */}
+            <main className="max-w-7xl mx-auto px-4 py-6">
+              <p className="text-gray-600">Resto del sitio</p>
+            </main>
           </div>
         </div>
       );

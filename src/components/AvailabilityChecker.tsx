@@ -130,9 +130,12 @@ import React, { useState, useEffect, useRef } from 'react';
                   placeholder="Ej. 123456789"
                   maxLength={12}
                   ref={rutInputRef}
-                  className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 
+                  className={`w-full px-4 py-2 border rounded-lg pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500 
                     ${rutValidation.isValid ? 'border-green-500' : 'border-gray-300'}`}
                 />
+                 {rutValidation.isValid && (
+                  <Check className="absolute right-3 top-1/2 -translate-y-1/2 text-green-500" size={20} />
+                )}
                 {rutValidation.message && (
                   <p className="mt-1 text-sm text-red-500">{rutValidation.message}</p>
                 )}
@@ -148,9 +151,12 @@ import React, { useState, useEffect, useRef } from 'react';
                   onChange={(e) => handlePhoneChange(e.target.value)}
                   placeholder="Ej. 985923283"
                   maxLength={9}
-                  className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 
+                  className={`w-full px-4 py-2 border rounded-lg pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500 
                     ${phoneValidation.isValid ? 'border-green-500' : 'border-gray-300'}`}
                 />
+                {phoneValidation.isValid && (
+                  <Check className="absolute right-3 top-1/2 -translate-y-1/2 text-green-500" size={20} />
+                )}
                 {phoneValidation.message && (
                   <p className="mt-1 text-sm text-red-500">{phoneValidation.message}</p>
                 )}
@@ -208,9 +214,12 @@ import React, { useState, useEffect, useRef } from 'react';
                   placeholder="Ej. 123456789"
                   maxLength={12}
                   ref={rutInputRef}
-                  className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 
+                  className={`w-full px-4 py-2 border rounded-lg pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500 
                     ${rutValidation.isValid ? 'border-green-500' : 'border-gray-300'}`}
                 />
+                 {rutValidation.isValid && (
+                  <Check className="absolute right-3 top-1/2 -translate-y-1/2 text-green-500" size={20} />
+                )}
                 {rutValidation.message && (
                   <p className="mt-1 text-sm text-red-500">{rutValidation.message}</p>
                 )}
@@ -226,9 +235,12 @@ import React, { useState, useEffect, useRef } from 'react';
                   onChange={(e) => handlePhoneChange(e.target.value)}
                   placeholder="Ej. 985923283"
                   maxLength={9}
-                  className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 
+                  className={`w-full px-4 py-2 border rounded-lg pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500 
                     ${phoneValidation.isValid ? 'border-green-500' : 'border-gray-300'}`}
                 />
+                {phoneValidation.isValid && (
+                  <Check className="absolute right-3 top-1/2 -translate-y-1/2 text-green-500" size={20} />
+                )}
                 {phoneValidation.message && (
                   <p className="mt-1 text-sm text-red-500">{phoneValidation.message}</p>
                 )}
