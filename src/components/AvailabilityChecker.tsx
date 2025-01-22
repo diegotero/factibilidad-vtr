@@ -107,7 +107,7 @@ import React, { useState, useEffect, useRef } from 'react';
             <div className="flex items-start">
               <Check className="text-green-500 mt-0.5 mr-3" size={20} />
               <div>
-                <h4 className="font-semibold text-green-900">¡Tenemos factibilidad!</h4>
+                <h4 className="font-semibold text-green-900">¡Tenemos disponibilidad!</h4>
                 <p className="text-sm text-green-800">
                   Podemos instalar el servicio en tu dirección:<br />
                   {formData.address}
@@ -117,7 +117,7 @@ import React, { useState, useEffect, useRef } from 'react';
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Por favor, ingresa tus datos</h3>
+            <p className="text-sm text-gray-600">Por favor, <span className="font-semibold">ingresa tus datos</span> para continuar con la contratación de tu servicio elegido.</p>
             
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">RUT</label>
@@ -198,9 +198,8 @@ import React, { useState, useEffect, useRef } from 'react';
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Déjanos tus datos</h3>
             <p className="text-sm text-gray-600">
-              Te notificaremos cuando el servicio esté disponible en tu zona.
+              <span className="font-semibold">Déjanos tus datos</span>span> para notificarte cuando el servicio esté disponible en tu zona.
             </p>
             
             <div>
@@ -275,7 +274,7 @@ import React, { useState, useEffect, useRef } from 'react';
               <div className="flex flex-col items-center">
                 <MapPin className="text-blue-500 mb-2" size={48} />
                 <h3 className="text-2xl font-bold text-gray-900">
-                  Verifica la disponibilidad en tu zona
+                  Verifica la disponibilidad de los servicios en tu zona
                 </h3>
               </div>
              )}
@@ -371,7 +370,7 @@ import React, { useState, useEffect, useRef } from 'react';
               aria-controls="availability-form"
             >
               <div className="flex items-center space-x-3">
-                <MapPin className="text-blue-500" size={24} />
+                <MapPin className="text-blue-500" size={30} />
                 <div>
                   <h2 className="font-semibold text-gray-900">Verifica la disponibilidad de los servicios&nbsp;en&nbsp;tu&nbsp;zona</h2>
                 </div>
