@@ -199,7 +199,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
           <div className="space-y-4">
             <p className="text-sm text-gray-600">
-              <span className="font-semibold">Déjanos tus datos</span>span> para notificarte cuando el servicio esté disponible en tu zona.
+              <span className="font-semibold">Déjanos tus datos</span> para notificarte cuando el servicio esté disponible en tu zona.
             </p>
             
             <div>
@@ -274,7 +274,7 @@ import React, { useState, useEffect, useRef } from 'react';
               <div className="flex flex-col items-center">
                 <MapPin className="text-blue-500 mb-2" size={48} />
                 <h3 className="text-2xl font-bold text-gray-900">
-                  Verifica la disponibilidad de los servicios en tu zona
+                  Verifica la disponibilidad en tu zona
                 </h3>
               </div>
              )}
