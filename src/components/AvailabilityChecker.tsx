@@ -267,7 +267,7 @@ import React, { useState, useEffect, useRef } from 'react';
         <div className="p-4 space-y-4">
           <div className="text-center mb-6">
              {!noAccordion && (
-              <h3 className="text-xl font-bold text-gray-900">
+              <h3 className={`text-xl font-bold text-gray-900 ${isExpanded ? 'hidden' : ''}`}>
                 Verifica la disponibilidad de los servicios&nbsp;en&nbsp;tu&nbsp;zona
               </h3>
              )}
