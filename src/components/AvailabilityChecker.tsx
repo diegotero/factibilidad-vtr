@@ -266,12 +266,19 @@ import React, { useState, useEffect, useRef } from 'react';
       const renderInitialState = () => (
         <div className="p-4 space-y-4">
           <div className="text-center mb-6">
-            <div className="flex flex-col items-center">
-              <MapPin className="text-blue-500 mb-2" size={48} />
-              <h3 className="text-2xl font-bold text-gray-900">
-                Verifica la disponibilidad en tu zona
+             {!noAccordion && (
+              <h3 className="text-xl font-bold text-gray-900">
+                Verifica la disponibilidad de los servicios&nbsp;en&nbsp;tu&nbsp;zona
               </h3>
-            </div>
+             )}
+             {noAccordion && (
+              <div className="flex flex-col items-center">
+                <MapPin className="text-blue-500 mb-2" size={48} />
+                <h3 className="text-2xl font-bold text-gray-900">
+                  Verifica la disponibilidad en tu zona
+                </h3>
+              </div>
+             )}
             <p className="text-gray-600 mt-2">
               Ingresa tu dirección para conocer los planes disponibles en tu ubicación y asegurar una instalación exitosa.
             </p>
@@ -366,8 +373,7 @@ import React, { useState, useEffect, useRef } from 'react';
               <div className="flex items-center space-x-3">
                 <MapPin className="text-blue-500" size={24} />
                 <div>
-                  <h2 className="font-semibold text-gray-900">Verifica la disponibilidad</h2>
-                  <p className="text-sm text-gray-600">Consulta la factibilidad en tu zona</p>
+                  <h2 className="font-semibold text-gray-900">Verifica la disponibilidad de los servicios&nbsp;en&nbsp;tu&nbsp;zona</h2>
                 </div>
               </div>
               {isExpanded ? (
